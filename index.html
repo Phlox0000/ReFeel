@@ -59,29 +59,10 @@ p{
   background:#7ddbb8;
 }
 
-.footer{
-  margin-top:40px;
-  font-size:14px;
-  color:#777;
-}
-
-/* 🔥 NEW: App Preview Image */
-.app-preview{
-  margin-top:20px;
-}
-
-.app-preview img{
-  width:100%;
-  max-width:700px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* 🔥 NEW: Secondary Button (Telegram) */
+/* 🔥 Secondary Button */
 .button-secondary{
   display:inline-block;
-  margin-top:12px;
-    margin-left:15px;
+  margin-top:15px;
   padding:13px 20px;
   background:#1f1f1f;
   color:#97e8ca;
@@ -96,6 +77,33 @@ p{
   background:#97e8ca;
   color:#000;
 }
+
+/* 🔥 Button Row Layout */
+.button-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:15px;
+}
+
+.footer{
+  margin-top:40px;
+  font-size:14px;
+  color:#777;
+}
+
+/* App Preview */
+.app-preview{
+  margin-top:20px;
+}
+
+.app-preview img{
+  width:100%;
+  max-width:700px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
 </style>
 </head>
 
@@ -106,10 +114,9 @@ p{
 <h1>ReFeel</h1>
 
 <p class="subtitle">
-A private emotional insights tool — no cloud, no AI, just you.
+A private tool for making sense of emotional moments — with minimal mental effort.
 </p>
 
-<!-- 🔥 APP PREVIEW -->
 <div class="app-preview">
   <img src="ReFeel.jpg" alt="ReFeel App Preview">
 </div>
@@ -123,7 +130,6 @@ ReFeel is a private tool for making sense of emotional moments — with minimal 
 <p>
 It helps you capture what you're feeling, see insights that emerge naturally, and revisit past reflections when similar emotions return.
 </p>
-
 </div>
 
 <div class="card">
@@ -132,17 +138,29 @@ It helps you capture what you're feeling, see insights that emerge naturally, an
 Download the latest Android version of ReFeel below:
 </p>
 
+<!-- 🔥 BUTTON GROUP -->
+<div class="button-row">
+
 <a class="button" href="https://github.com/Phlox0000/ReFeel-APK/releases/download/v1.0.0/app-release.apk">
-Download ReFeel APK
+Download APK
 </a>
 
-<!-- 🔥 NEW TELEGRAM CTA -->
 <a class="button-secondary" href="https://t.me/RefeelBetaTesters" target="_blank">
-Join ReFeel Beta Testers Community
+Telegram
 </a>
+
+<a class="button-secondary" href="https://discord.gg/XkcHtPjQv" target="_blank">
+Discord
+</a>
+
+<a class="button-secondary" href="https://github.com/Phlox0000/Satix-ReFeelCore" target="_blank">
+Follow Development
+</a>
+
+</div>
 
 <p style="margin-top:10px; font-size:14px; color:#aaa;">
-Join our Telegram channel to share feedback, ask questions, and help shape what comes next.
+Join the community, share feedback, and help shape what comes next.
 </p>
   
 <p style="margin-top:15px; font-size:14px; color:#aaa;">
@@ -155,7 +173,7 @@ Join our Telegram channel to share feedback, ask questions, and help shape what 
 <h2>Why ReFeel?</h2>
 <p>
 Most emotional tools analyze you.  
-ReFeel gives you space to see yourself clearly — privately.
+ReFeel gives you space to see patterns that emerge from your own moments — privately.
 </p>
 </div>
 
@@ -174,7 +192,6 @@ You choose whether to enable it.
 <p>
 Read our <a href="privacy.html" style="color:#97e8ca;">Privacy Policy</a>.
 </p>
-
 </div>
 
 <div class="card">
