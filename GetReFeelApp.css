@@ -46,10 +46,12 @@ body{
 
 
 /* MOBILE NAV */
+
 .menu-toggle{
   display:none;
   font-size:28px;
   cursor:pointer;
+  transition:0.2s ease;
 }
 
 /* FORCE hide on desktop */
