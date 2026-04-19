@@ -36,8 +36,13 @@
     </p>
 
     <div class="buttons">
-      <a class="btn primary" href="#">Download APK</a>
-      <a class="btn secondary" href="#">Join Discord</a>
+      <a class="btn primary" href="https://github.com/Phlox0000/ReFeel-APK/releases/tag/v1.0.0" target="_blank">
+  Download APK
+</a>
+
+<a class="btn secondary" href="https://discord.gg/XkcHtPjQv" target="_blank">
+  Join Discord
+</a>
     </div>
   </div>
 
@@ -103,10 +108,18 @@
 </footer>
 
 
-  <script>
+ <script>
 function toggleMenu(){
   const menu = document.getElementById("nav-menu");
+  const toggle = document.querySelector(".menu-toggle");
+
   menu.classList.toggle("active");
+
+  if(menu.classList.contains("active")){
+    toggle.textContent = "✖";
+  } else {
+    toggle.textContent = "☰";
+  }
 }
 </script>
 </body>
