@@ -1,211 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ReFeel</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body{
-  font-family: Arial, sans-serif;
-  background:#0a0a0a;
-  color:white;
-  text-align:center;
-  padding:30px;
-  margin:0;
-}
-
-.container{
-  max-width:800px;
-  margin:auto;
-}
-
-h1{
-  color:#97e8ca;
-  font-size:42px;
-  margin-bottom:10px;
-}
-
-.subtitle{
-  color:#bbb;
-  font-size:18px;
-  margin-bottom:30px;
-}
-
-p{
-  line-height:1.6;
-  font-size:17px;
-}
-
-.card{
-  background:#111;
-  padding:25px;
-  border-radius:14px;
-  margin-top:25px;
-}
-
-.button{
-  display:inline-block;
-  margin-top:15px;
-  padding:14px 22px;
-  background:#97e8ca;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:10px;
-  transition:0.2s;
-}
-
-.button:hover{
-  background:#7ddbb8;
-}
-
-/* 🔥 Secondary Button */
-.button-secondary{
-  display:inline-block;
-  margin-top:15px;
-  padding:13px 20px;
-  background:#1f1f1f;
-  color:#97e8ca;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:10px;
-  border:1px solid #97e8ca;
-  transition:0.2s;
-}
-
-.button-secondary:hover{
-  background:#97e8ca;
-  color:#000;
-}
-
-/* 🔥 Button Row Layout */
-.button-row{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-top:15px;
-}
-
-.footer{
-  margin-top:40px;
-  font-size:14px;
-  color:#777;
-}
-
-/* App Preview */
-.app-preview{
-  margin-top:20px;
-}
-
-.app-preview img{
-  width:100%;
-  max-width:700px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.6);
-}
-</style>
+<link rel="stylesheet" href="css/GetReFeelApp.css">
 </head>
 
 <body>
 
-<div class="container">
-
-<h1>ReFeel</h1>
-
-<p class="subtitle">
-A private tool for making sense of emotional moments — with minimal mental effort.
-</p>
-
-<div class="app-preview">
-  <img src="ReFeel.jpg" alt="ReFeel App Preview">
+<!-- 🔥 NAV -->
+<header class="nav">
+<div class="logo">
+  <img src="assets/images/ReFeelVectorIcon.png" alt="ReFeel Icon">
+  <span>ReFeel</span>
 </div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<div class="card">
-<h2>What is ReFeel?</h2>
-<p>
-ReFeel is a private tool for making sense of emotional moments — with minimal mental effort.
-</p>
+<!-- 🔥 HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Understand your emotional moments in under 60 seconds.</h1>
+    <p>
+      A private tool that helps you process what you're feeling,
+      see patterns, and revisit insights — all on your device.
+    </p>
 
-<p>
-It helps you capture what you're feeling, see insights that emerge naturally, and revisit past reflections when similar emotions return.
-</p>
-</div>
+    <div class="buttons">
+      <a class="btn primary" href="#">Download APK</a>
+      <a class="btn secondary" href="#">Join Discord</a>
+    </div>
+  </div>
 
-<div class="card">
-<h2>Download</h2>
-<p>
-Download the latest Android version of ReFeel below:
-</p>
+  <div class="hero-image">
+    <img src="assets/images/refeel.png" alt="ReFeel App">
+  </div>
+</section>
 
-<!-- 🔥 BUTTON GROUP -->
-<div class="button-row">
+<!-- 🔥 FEATURES -->
+<section id="features" class="section">
+  <h2>Features</h2>
 
-<a class="button" href="https://github.com/Phlox0000/ReFeel-APK/releases/download/v1.0.0/app-release.apk">
-Download APK
-</a>
+  <div class="grid">
+    <div class="card">
+      <h3>Capture moments</h3>
+      <p>Quickly record what you're feeling without friction.</p>
+    </div>
 
-<a class="button-secondary" href="https://t.me/RefeelBetaTesters" target="_blank">
-Telegram
-</a>
+    <div class="card">
+      <h3>See patterns</h3>
+      <p>Insights emerge naturally from repeated moments.</p>
+    </div>
 
-<a class="button-secondary" href="https://discord.gg/XkcHtPjQv" target="_blank">
-Discord
-</a>
+    <div class="card">
+      <h3>Time capsules</h3>
+      <p>Revisit reflections when similar emotions return.</p>
+    </div>
 
-</div>
+    <div class="card">
+      <h3>Private by default</h3>
+      <p>Your data stays on your device. Sync is optional.</p>
+    </div>
+  </div>
+</section>
 
-  <p style="margin-top:12px; font-size:14px; color:#aaa;">
-This APK is hosted on GitHub. You can view the release and files before downloading.
-</p>
-  
-<p style="margin-top:10px; font-size:14px; color:#aaa;">
-Join the community, share feedback, and help shape what comes next.
-</p>
-  
-<p style="margin-top:15px; font-size:14px; color:#aaa;">
-(Android only • You may need to allow installation from unknown sources)
-</p>
+<!-- 🔥 FAQ -->
+<section id="faq" class="section dark">
+  <h2>FAQ</h2>
 
-</div>
+  <div class="faq-item">
+    <h3>What is ReFeel?</h3>
+    <p>
+      ReFeel is a private tool for making sense of emotional moments — with minimal mental effort.
+    </p>
+  </div>
 
-<div class="card">
-<h2>Why ReFeel?</h2>
-<p>
-Most emotional tools analyze you.  
-ReFeel gives you space to see patterns that emerge from your own moments — privately.
-</p>
-</div>
+  <div class="faq-item">
+    <h3>Is my data private?</h3>
+    <p>
+      Yes. Everything stays on your device. Sync is optional and controlled by you.
+    </p>
+  </div>
+</section>
 
-<div class="card">
-<h2>Privacy</h2>
-<p>
-ReFeel is built on a zero-knowledge approach.  
-Your data stays on your device.
-</p>
+<!-- 🔥 CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: nwokwuemmanuel9@gmail.com</p>
+</section>
 
-<p>
-Optional sync is available using secure cloud storage, allowing you to access your data across devices.
-You choose whether to enable it.
-</p>
-
-<p>
-Read our <a href="privacy.html" style="color:#97e8ca;">Privacy Policy</a>.
-</p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>
-Email: nwokwuemmanuel9@gmail.com
-</p>
-</div>
-
-<div class="footer">
-© 2026 ReFeel
-</div>
-
-</div>
+<footer>
+  © 2026 ReFeel
+</footer>
 
 </body>
 </html>
