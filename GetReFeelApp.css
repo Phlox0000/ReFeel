@@ -203,14 +203,17 @@ body{
 
 .card{
   background:#111;
-  padding:28px 22px; /* more vertical breathing */
+  padding:28px 22px;
   border-radius:14px;
-  min-height:160px; /* slightly taller cards */
+  min-height:160px;
 
   display:flex;
   flex-direction:column;
   justify-content:center;
-  gap:12px; /* space between title and text */
+  align-items:center; /* 🔥 THIS centers horizontally */
+  text-align:center;  /* 🔥 THIS centers text */
+
+  gap:12px;
 }
 
 /* FAQ */
