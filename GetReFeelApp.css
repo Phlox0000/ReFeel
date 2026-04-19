@@ -48,6 +48,13 @@ body{
   cursor:pointer;
 }
 
+/* FORCE hide on desktop */
+@media (min-width: 769px){
+  .menu-toggle{
+    display:none !important;
+  }
+}
+
 #nav-menu{
   display:flex;
 }
@@ -172,7 +179,7 @@ body{
 }
 
 .section h2{
-  text-align:left;
+  text-align:center;
 }
 
 .section p{
