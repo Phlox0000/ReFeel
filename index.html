@@ -11,14 +11,17 @@
 
 <!-- 🔥 NAV -->
 <header class="nav">
-<div class="logo">
-<img src="./ReFeelVectorIcon.png" alt="ReFeel Icon">
-  <span>ReFeel</span>
-</div>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
+  <div class="logo">
+    <img src="./ReFeelVectorIcon.png" alt="ReFeel Icon">
+    <span>ReFeel</span>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav-menu">
+    <a href="#features" onclick="toggleMenu()">Features</a>
+    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
   </nav>
 </header>
 
@@ -98,5 +101,12 @@
   © 2026 ReFeel
 </footer>
 
+
+  <script>
+function toggleMenu(){
+  const menu = document.getElementById("nav-menu");
+  menu.classList.toggle("active");
+}
+</script>
 </body>
 </html>
